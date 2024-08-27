@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador JD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Encriptador de Texto</h1>
+
+        <div class="input-container">
+            <textarea id="inputText" placeholder="Escribe el texto aquí..."></textarea>
+        </div>
+        
+        <div class="button-container">
+            <button class="btn btn-encrypt" onclick="encryptText()">
+                <img src="./imagenes/cerr.webp" alt="Encriptar" class="icon"> Encriptar
+            </button>
+            <button class="btn btn-decrypt" onclick="decryptText()">
+                <img src="./imagenes/candado a.webp" alt="Desencriptar" class="icon"> Desencriptar
+            </button>
+         <button class="btn btn-copy" onclick="copyText()">
+            <img src="./imagenes/copy-256.webp" alt="Copiar" class="icon"> Copiar
+        </button>
+        </div>
+
+        <div class="output-container">
+            <textarea id="outputText" placeholder="Texto encriptado..."></textarea>
+            <div id="outputNotification" class="output-notification"></div> <!-- Notificación nueva -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
